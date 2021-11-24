@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import LoginBogota from './componentes/erik/bogota/login-bogota.js'
+// import LoginCali from './componentes/erik/cali/login-cali.js'
+// import LoginMedallo from './componentes/erik/medallo/login-medallo.js'
+// import CargaProductos from './componentes/juan/carga-productos.js'
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <LoginBogota/>
+  {/* <LoginCali/> */}
+  {/* <LoginMedallo/> */}
+  {/* <CargaProductos/> */}
+  {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
