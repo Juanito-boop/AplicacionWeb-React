@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #fff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  border-right: solid 1px #ccc;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #d7e4f4;
+  color: #1c9cd8;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #d7e4f4;
+  color: #1c9cd8;
+  text-decoration: none;
+}
+
+.toogleButton {
+  color: #000;
+  background-color: #d7e4f4;
+  height: 50px;
+  width: 50px;
+  z-index: 3;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  ul {
+    width: 100%;
+    z-index: 4;
+    display: none;
+    right: 100%;
+    border-right: none;
+  }
+  .toogleButton {
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    display: block;
+  }
+  .navBar_visible {
+    right: 0%;
+  }
+}

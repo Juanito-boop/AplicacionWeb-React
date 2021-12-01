@@ -1,8 +1,16 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+import Head from './components/head/head';
+import Menu from './components/menu/Menu';
+import './App';
 
 function App() {
-  return <App/>
+  return (
+    <>
+      <Head />
+      <Menu />
+    </>
+  );
 }
 
 export default App;

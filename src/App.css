@@ -1,42 +1,38 @@
-* {
-  box-sizing: border-box;
+.App {
+  text-align: center;
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
-  z-index: 1;
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
-header {
-  background-color: rgb(73, 140, 202);
-  padding: 3px 30px;
-  text-align: left;
-  font-size: 15px;
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
 }
-.caja-primera {
-  background-color: rgb(247, 247, 247);
-  /* border: 5px inset rgb(73, 140, 202); */
-  border-radius: 10px;
-  justify-content: center;
-  text-align: center;
-  margin-top: 120px;
-  margin-left: 100px;
-  margin-right: 100px;
-  z-index: 3;
+
+.App-link {
+  color: #61dafb;
 }
-.boton-subir-archivo {
-  /* border: 3px inset rgba(255, 255, 0); */
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  z-index: 2;
-}
-.boton-publicar {
-  /* border: 3px inset #3cff00; */
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  z-index: 2;
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

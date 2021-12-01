@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+/* CLIENTES */
+.cliente-container {
+  margin-left: 25%;
+  padding: 20px 20px 20px 20px;
+  position: fixed;
+  height: 100%;
+  width: 75%;
+  z-index: 1;
+  overflow-y: auto;
+}
+.cliente-button {
+  width: 100%;
+  height: 50px;
+  background-color: #83acdf;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  z-index: 1;
+}
+/* CONSOLIDADO */
+.consolidado-container {
+  margin-left: 25%;
+  padding: 1px 16px;
+  position: fixed;
+  height: 100%;
+  width: 75%;
+  z-index: 1;
+  overflow-y: auto;
+}
+/* HEAD */
+.title-color {
+  background-color: #1c9cd8;
+  color: #fff;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  /* position: -webkit-sticky; */
+  position: static;
+  top: 0;
+  z-index: 1;
+}
+/* LOGIN */
+.login-container {
+  margin-left: 25%;
+  padding: 100px 50px 0px 50px;
+  position: fixed;
+  height: 100%;
+  width: 75%;
+  z-index: 1;
+  overflow-y: auto;
+}
+.login-button {
+  width: 100%;
+  height: 50px;
+  background-color: #83acdf;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  z-index: 1;
+}
+/* MENU */
+/* PRODUCTOS */
+.producto-container {
+  margin-left: 25%;
+  padding: 100px 50px 0 50px;
+  position: fixed;
+  height: 100%;
+  width: 75%;
+  z-index: 4;
+  overflow-y: auto;
+}
+.boton-subir-archivo {
+  /* border: 3px inset rgba(255, 255, 0); */
+  border-radius: 10px;
+  padding: 10px;
+  /* margin: 10px; */
+  margin-left: -22%;
+  cursor: pointer;
+  z-index: 2;
+}
+.boton-publicar {
+  /* border: 3px inset #3cff00; */
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 12%;
+  cursor: pointer;
+  z-index: 2;
+}
+/* REPORTES */
+.reporte-container {
+  margin-left: 25%;
+  padding: 1px 16px;
+  position: fixed;
+  height: 100%;
+  width: 75%;
+  z-index: 1;
+  overflow-y: auto;
+}
+/* VENTAS */
+.venta-container {
+  margin-left: 25%;
+  padding: 1px 16px;
+  position: fixed;
+  height: 100%;
+  width: 75%;
+  z-index: 1;
+  overflow-y: auto;
+}
+@media screen and (max-width: 768px) {
+  .cliente-container {
+    margin-left: 0;
+    padding: 20px 20px 20px 20px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow-y: auto;
+  }
+  .consolidado-container {
+    margin-left: 0;
+    padding: 1px 16px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .login-container {
+    margin-left: 0;
+    padding: 100px 50px 0 50px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow-y: auto;
+  }
+  .producto-container {
+    margin-left: 10%;
+    padding: 100px 50px 0 50px;
+    position: fixed;
+    height: 100%;
+    width: 75%;
+    z-index: 4;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .boton-publicar {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 22%;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .reporte-container {
+    margin-left: 0;
+    padding: 1px 16px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow-y: auto;
+  }
+  .venta-container {
+    margin-left: 0;
+    padding: 1px 16px;
+    overflow-y: auto;
+  }
+}
