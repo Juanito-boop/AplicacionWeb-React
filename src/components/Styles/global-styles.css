@@ -118,70 +118,375 @@ body {
   z-index: 1;
   overflow-y: auto;
 }
+/* tableta */
 @media screen and (max-width: 768px) {
+  .tittle-color {
+    height: 116px;
+  }
   .cliente-container {
+    padding-right: 10px;
+    padding-left: 10px;
     margin-left: 0;
-    padding: 20px 20px 20px 20px;
-    position: fixed;
-    height: 100%;
+    margin-right: 0;
+    position: center;
     width: 100%;
     z-index: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
   .consolidado-container {
+    padding-right: 10px;
+    padding-left: 10px;
     margin-left: 0;
-    padding: 1px 16px;
-    position: fixed;
-    height: 100%;
+    margin-right: 0;
+    position: center;
     width: 100%;
     z-index: 1;
+    overflow-y: scroll;
   }
   .login-container {
+    padding-right: 10px;
+    padding-left: 10px;
     margin-left: 0;
-    padding: 100px 50px 0 50px;
-    position: fixed;
-    height: 100%;
+    margin-right: 0;
+    position: center;
     width: 100%;
     z-index: 1;
-    overflow-y: auto;
-  }
-  .producto-container {
-    margin-left: 10%;
-    padding: 100px 50px 0 50px;
-    position: fixed;
-    height: 100%;
-    width: 75%;
-    z-index: 4;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  .boton-publicar {
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 22%;
-    cursor: pointer;
-    z-index: 2;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-  }
-  .titulo {
-    font-size: 20px;
+    overflow-y: scroll;
   }
   .reporte-container {
+    padding-right: 10px;
+    padding-left: 10px;
     margin-left: 0;
-    padding: 1px 16px;
-    position: fixed;
-    height: 100%;
+    margin-right: 0;
+    position: center;
     width: 100%;
     z-index: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
   .venta-container {
+    padding-right: 10px;
+    padding-left: 10px;
     margin-left: 0;
-    padding: 1px 16px;
-    overflow-y: auto;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .producto-container {
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  .boton-publicar {
+    margin-bottom: 10px;
+    margin-left: 112px;
+    margin-right: 112px;
+    width: 124px;
+    z-index: 1;
+  }
+  .boton-subir-archivo {
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    width: 350px;
+    z-index: 1;
+  }
+  .botones {
+    position: center;
+    z-index: 1;
+  }
+  .titulo {
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100px;
+    z-index: 1;
+  }
+  .title-color {
+    height: 116px;
+  }
+}
+/* telefono tamaño L */
+@media screen and (max-width: 425px) {
+  .cliente-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .consolidado-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .login-container {
+    top: 225px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .reporte-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .venta-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .producto-container {
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  .boton-publicar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    margin-right: 131px;
+    width: 124px;
+    z-index: 1;
+  }
+  .boton-subir-archivo {
+    margin-left: 37px;
+    margin-right: 37px;
+    position: center;
+    width: 350px;
+    z-index: 1;
+  }
+  .botones {
+    position: center;
+    z-index: 1;
+  }
+  .titulo,
+  .titulo-productos {
+    height: 24px;
+    width: 300px;
+    margin-left: 60px;
+    margin-right: 0;
+    position: center;
+    z-index: 1;
+  }
+  .title-color {
+    height: 156px;
+  }
+}
+/* telefono tamaño M */
+@media screen and (max-width: 375px) {
+  .cliente-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .consolidado-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .login-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .reporte-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .venta-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .producto-container {
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  .boton-publicar {
+    margin-bottom: 10px;
+    margin-left: 112px;
+    margin-right: 112px;
+    width: 124px;
+    z-index: 1;
+  }
+  .boton-subir-archivo {
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    width: 350px;
+    z-index: 1;
+  }
+  .botones {
+    position: center;
+    z-index: 1;
+  }
+  .titulo {
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100px;
+    z-index: 1;
+  }
+  .title-color {
+    height: 156px;
+  }
+}
+/* telefono tamaño S */
+@media screen and (max-width: 320px) {
+  .cliente-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .consolidado-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .login-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .reporte-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .venta-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .producto-container {
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  .boton-publicar {
+    margin-bottom: 10px;
+    margin-left: 112px;
+    margin-right: 112px;
+    width: 124px;
+    z-index: 1;
+  }
+  .boton-subir-archivo {
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    width: 350px;
+    z-index: 1;
+  }
+  .botones {
+    position: center;
+    z-index: 1;
+  }
+  .titulo {
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100px;
+    z-index: 1;
+  }
+  .title-color {
+    height: 206px;
   }
 }

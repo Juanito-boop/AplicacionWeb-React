@@ -1,7 +1,6 @@
 body {
   margin: 0;
 }
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -14,26 +13,22 @@ ul {
   text-align: center;
   border-right: solid 1px #ccc;
 }
-
 li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
-
 li a.active {
   background-color: #d7e4f4;
   color: #1c9cd8;
   text-decoration: none;
 }
-
 li a:hover:not(.active) {
   background-color: #d7e4f4;
   color: #1c9cd8;
   text-decoration: none;
 }
-
 .toogleButton {
   color: #000;
   background-color: #d7e4f4;
@@ -45,28 +40,117 @@ li a:hover:not(.active) {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-
   display: none;
 }
+/* tableta */
 @media screen and (max-width: 768px) {
-  body {
-    margin: 0;
-  }
   ul {
     width: 100%;
-    z-index: 4;
-    display: none;
-    right: 100%;
-    border-right: none;
+  }
+  .vertical-menu {
+    width: 50px;
   }
   .toogleButton {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
+    border-top-width: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     display: block;
   }
-  .navBar_visible {
-    right: 0%;
+  .menu_navBar {
+    width: 100%;
+    left: 100%;
+    z-index: 100;
+    display: none;
+  }
+  .menu_activate {
+    width: 100%;
+    left: 0%;
+    z-index: 1000;
+  }
+}
+/* telefono tamaño L */
+@media screen and (max-width: 420px) {
+  ul {
+    width: 100%;
+  }
+  .vertical-menu {
+    width: 50px;
+  }
+  .toogleButton {
+    border-top-width: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: block;
+  }
+  .menu_navBar {
+    width: 100%;
+    left: 0%;
+    z-index: 100;
+    display: none;
+  }
+  .menu_activate {
+    width: 100%;
+    left: 0%;
+    z-index: 100;
+  }
+}
+/* telefono tamaño M */
+@media screen and (max-width: 375px) {
+  ul {
+    width: 100%;
+  }
+  .vertical-menu {
+    width: 50px;
+  }
+  .toogleButton {
+    border-top-width: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: block;
+  }
+  .menu_navBar {
+    width: 100%;
+    left: 100%;
+    z-index: 100;
+    display: none;
+  }
+  .menu_activate {
+    width: 100%;
+    left: 0%;
+    z-index: 100;
+  }
+}
+/* telefono tamaño s */
+@media screen and (max-width: 320px) {
+  ul {
+    width: 100%;
+  }
+  .vertical-menu {
+    width: 50px;
+  }
+  .toogleButton {
+    border-top-width: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: block;
+  }
+  .menu_navBar {
+    width: 100%;
+    left: 100%;
+    z-index: 100;
+    display: none;
+  }
+  .menu_activate {
+    width: 100%;
+    left: 0%;
+    z-index: 100;
   }
 }

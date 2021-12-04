@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { menuTelefonos } from "./menu-telefonos";
 
 import Producto from "../productos/productos";
 import Cliente from "../clientes/clientes";
@@ -14,6 +15,8 @@ import Venta from "../ventas/ventas";
 import Reporte from "../reportes/reportes";
 import Consolidado from "../consolidado/consolidado";
 import Login from "../login/login";
+// eslint-disable-next-line
+import Black from "./boton.js";
 
 import "./Navbar.css";
 
@@ -22,11 +25,10 @@ export default class Menu extends Component {
     return (
       <Router>
         <div className="vertical-menu">
-          <script src="./boton.js"></script>
-          <button className="toogleButton" aria-label="Abrir menú">
+          <button className="toogleButton" aria-label="Abrir menú" onClick={Black}>
             <FontAwesomeIcon icon={faBars} />
           </button>
-          <ul className="menu">
+          <ul className="menu_navBar">
             <li>
               <NavLink to="/login" className="" activeclass="active">
                 Inicio
@@ -52,7 +54,7 @@ export default class Menu extends Component {
                 Reporte
               </NavLink>
             </li>
-            <li >
+            <li>
               <NavLink to="/consolidado" className="" activeclass="active">
                 Consolidado
               </NavLink>
