@@ -1,7 +1,9 @@
-export default function Black() {
-    const toogleButton = document.querySelector(".toogleButton")
-    const menu_activate = document.querySelector(".menu_activate")
-    toogleButton.addEventListener("click", () => {
-        menu_activate.classList.toggle(".menu_navBar");
-    })
-}
+// import React, { useState } from "react";
+
+// function mod() {
+//     const [isOpen, setIsOpen] = useState(false)
+//     function onClickButton() {
+//         setIsOpen(!isOpen);
+//     }
+// }
+// export default onClickButton;

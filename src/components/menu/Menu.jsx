@@ -16,40 +16,57 @@ import Reporte from "../reportes/reportes";
 import Consolidado from "../consolidado/consolidado";
 import Login from "../login/login";
 // eslint-disable-next-line
-import Black from "./boton.js";
+// import mod from "./boton.js";
 
 import "./Navbar.css";
 
 export default class Menu extends Component {
   render() {
+    function Black() {
+      // document.getElementById('navBar').classList.remove('navBar');
+      // document.getElementById('navBar').classList.add('active');
+      document.getElementById('navBar').classList.toggle('active');
+    }
+    function menu() {
+      document.getElementById('toogleButton').onClick = function () {
+        Black();
+      }
+    }
+    // function mod() {
+    //   const [isOpen, setIsOpen] = useState(false)
+    //   function onClickButton() {
+    //     setIsOpen(!isOpen);
+    //   }
+    // }
     return (
-      <Router>
+      <><Router>
         <div className="vertical-menu">
-          <button className="toogleButton" aria-label="Abrir menú" onClick={Black}>
+          <button id="toogleButton" aria-label="Abrir menú" onClick={menu}>
             <FontAwesomeIcon icon={faBars} />
           </button>
-          <ul className="menu_navBar">
+          {/*<ul id="active">*/}
+          <ul id="navBar">
             <li>
               <NavLink to="/login" className="" activeclass="active">
                 Inicio
               </NavLink>
             </li>
-            <li >
+            <li>
               <NavLink to="/producto" className="" activeclass="active">
                 Producto
               </NavLink>
             </li>
-            <li >
+            <li>
               <NavLink to="/cliente" className="" activeclass="active">
                 Cliente
               </NavLink>
             </li>
-            <li >
+            <li>
               <NavLink to="/venta" className="" activeclass="active">
                 Venta
               </NavLink>
             </li>
-            <li >
+            <li>
               <NavLink to="/reporte" className="" activeclass="active">
                 Reporte
               </NavLink>
@@ -67,19 +84,17 @@ export default class Menu extends Component {
             exact
             path="/producto"
             caseSensitive={true}
-            element={<Producto />}
-          />
+            element={<Producto />} />
           <Route path="/cliente" caseSensitive={true} element={<Cliente />} />
           <Route exact path="/venta" caseSensitive={true} element={<Venta />} />
           <Route path="/reporte" caseSensitive={true} element={<Reporte />} />
           <Route
             path="/consolidado"
             caseSensitive={true}
-            element={<Consolidado />}
-          />
+            element={<Consolidado />} />
           <Route path="/login" caseSensitive={true} element={<Login />} />
         </Routes>
-      </Router>
+      </Router></>
     );
   }
 }

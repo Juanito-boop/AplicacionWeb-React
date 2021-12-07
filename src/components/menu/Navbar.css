@@ -29,7 +29,7 @@ li a:hover:not(.active) {
   color: #1c9cd8;
   text-decoration: none;
 }
-.toogleButton {
+#toogleButton {
   color: #000;
   background-color: #d7e4f4;
   height: 50px;
@@ -50,7 +50,7 @@ li a:hover:not(.active) {
   .vertical-menu {
     width: 50px;
   }
-  .toogleButton {
+  #toogleButton {
     border-top-width: 2px;
     margin-top: 10px;
     margin-left: 10px;
@@ -58,13 +58,13 @@ li a:hover:not(.active) {
     margin-right: 10px;
     display: block;
   }
-  .menu_navBar {
+  #navBar {
     width: 100%;
     left: 100%;
     z-index: 100;
     display: none;
   }
-  .menu_activate {
+  #active {
     width: 100%;
     left: 0%;
     z-index: 1000;
@@ -78,7 +78,7 @@ li a:hover:not(.active) {
   .vertical-menu {
     width: 50px;
   }
-  .toogleButton {
+  #toogleButton {
     border-top-width: 2px;
     margin-top: 10px;
     margin-left: 10px;
@@ -86,16 +86,16 @@ li a:hover:not(.active) {
     margin-right: 10px;
     display: block;
   }
-  .menu_navBar {
+  #navBar {
     width: 100%;
     left: 0%;
     z-index: 100;
     display: none;
   }
-  .menu_activate {
+  #active {
     width: 100%;
     left: 0%;
-    z-index: 100;
+    z-index: 1000;
   }
 }
 /* telefono tamaño M */
@@ -106,7 +106,7 @@ li a:hover:not(.active) {
   .vertical-menu {
     width: 50px;
   }
-  .toogleButton {
+  #toogleButton {
     border-top-width: 2px;
     margin-top: 10px;
     margin-left: 10px;
@@ -114,16 +114,16 @@ li a:hover:not(.active) {
     margin-right: 10px;
     display: block;
   }
-  .menu_navBar {
+  #navBar {
     width: 100%;
     left: 100%;
     z-index: 100;
     display: none;
   }
-  .menu_activate {
+  #active {
     width: 100%;
     left: 0%;
-    z-index: 100;
+    z-index: 1000;
   }
 }
 /* telefono tamaño s */
@@ -134,7 +134,7 @@ li a:hover:not(.active) {
   .vertical-menu {
     width: 50px;
   }
-  .toogleButton {
+  #toogleButton {
     border-top-width: 2px;
     margin-top: 10px;
     margin-left: 10px;
@@ -142,15 +142,15 @@ li a:hover:not(.active) {
     margin-right: 10px;
     display: block;
   }
-  .menu_navBar {
+  #navBar {
     width: 100%;
     left: 100%;
     z-index: 100;
     display: none;
   }
-  .menu_activate {
+  #active {
     width: 100%;
     left: 0%;
-    z-index: 100;
+    z-index: 1000;
   }
 }
